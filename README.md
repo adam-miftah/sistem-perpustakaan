@@ -7,55 +7,89 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# 📚 Sistem Perpustakaan
+- Sistem Perpustakaan adalah aplikasi berbasis Laravel 12 yang digunakan untuk mengelola kegiatan perpustakaan seperti:
+- Manajemen data buku 📖
+- Manajemen anggota 👥
+- Peminjaman & pengembalian buku 🔄
+- Perhitungan denda keterlambatan 💰
+- Manajemen backup database 💾
+- Aplikasi ini dibuat agar pengelolaan perpustakaan menjadi lebih mudah, efisien, dan terorganisir.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# ✨ Fitur Utama
+- ✅ Manajemen Buku – Tambah, ubah, hapus, dan lihat daftar buku
+- ✅ Manajemen Anggota – Kelola data user/anggota perpustakaan
+- ✅ Peminjaman Buku – Proses peminjaman dengan tanggal pinjam & kembali
+- ✅ Pengembalian Buku – Perhitungan otomatis keterlambatan dan denda
+- ✅ Denda – Tercatat otomatis jika ada keterlambatan
+- ✅ Backup Database – Fitur untuk backup, restore, download, dan hapus file backup
+- ✅ Autentikasi & Role – Hak akses Admin dan User dengan middleware role
+- ✅ UI Responsif – Menggunakan Bootstrap 5 & Blade template
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+# 🛠️ Teknologi
+- Framework: Laravel 12
+- Bahasa: PHP 8.3
+- Database: MySQL
+- Frontend: Bootstrap 5, Blade Template
+- Library Pendukung: Carbon, Eloquent ORM
+- Server Dev: Laragon
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+# ⚙️ Instalasi
+### 1. Clone Repository
+```bash
+git clone https://github.com/adam-miftah/sistem-perpustakaan.git
+cd sistem-perpustakaan
+```
+### 2. Install Dependencies
+```bash
+composer install
+npm install && npm run dev
+```
+### 3. Setup Environment 
+Salin file .env.example menjadi .env lalu sesuaikan konfigurasi database:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=sistem_perpustakaan
+DB_USERNAME=root
+DB_PASSWORD=
+### 4. Generate Key & Migrasi Database
+```bash
+php artisan key:generate
+php artisan migrate --seed
+```
+### 5. Jalankan Server
+```bash
+php artisan serve
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+# 👤 Roles & Login
+### Admin
+- Username: admin@perpus.com
+- Password: password123
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### User/Anggota
+Bisa daftar melalui form registrasi atau gunakan akun seed default
 
-### Premium Partners
+--- 
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# 🤝 Kontribusi
+- Fork repo ini
+- Buat branch baru (feature/nama-fitur)
+- Commit perubahanmu
+- Push ke branch
+- Buat Pull Request
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 📞 Kontak
+### 📧 Email: adammiftah196@gmail.com
+### 🌐 Website: www.adammiftah.com
